@@ -1,0 +1,13 @@
+apiVersion: yasser.resource/v1
+kind: WebApp
+metadata:
+  labels:
+    app.kubernetes.io/name: webapp
+    app.kubernetes.io/instance: webapp-sample
+    app.kubernetes.io/part-of: k8s-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: k8s-operator
+  name: webapp-sample
+spec:
+  image: nginx
+  replicas: 4
